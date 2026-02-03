@@ -1,0 +1,80 @@
+{
+  "nav.classes": "Clases",
+  "nav.pricing": "Precios",
+  "nav.reviews": "Reseñas",
+  "nav.contact": "Contacto",
+
+  "hero.title": "Estudio de aprendizaje temprano en Cary para niños de 3 a 7 años",
+  "hero.subtitle": "Caligrafía, creatividad, preparación escolar, STEM y más — en un espacio cálido, tranquilo e inspirador donde los niños se sienten seguros y motivados.",
+  "hero.cta": "Reservar una clase de prueba gratuita",
+  "hero.secondaryCta": "Explorar todas las clases",
+  "hero.badgeSmallGroups": "Grupos pequeños de 4–6 niños",
+  "hero.badgeAges": "Edades 3–7",
+  "hero.badgeLocation": "Ubicado en Cary, NC",
+
+  "hero.card1.title": "Caligrafía y motricidad fina",
+  "hero.card1.text": "Práctica suave con hojas divertidas, líneas, formas y letras para preparar las manos pequeñas para escribir con confianza.",
+
+  "hero.card2.title": "Arte creativo y dibujo",
+  "hero.card2.text": "Colores, formas, imaginación y narración a través del arte — sin presión, solo alegría y creatividad.",
+
+  "hero.card3.title": "Preparación escolar y STEM",
+  "hero.card3.text": "Lógica, números, patrones, ciencia temprana y resolución de problemas para que los primeros años escolares sean más fáciles y felices.",
+
+  "why.title": "Por qué los padres eligen Majestic Dream Cary",
+  "why.subtitle": "Un ambiente tranquilo, estructurado e inspirador donde cada niño es visto, escuchado y apoyado.",
+
+  "why.point1.title": "Enfoque en habilidades reales",
+  "why.point1.text": "Caligrafía, lectura, lógica, creatividad, STEM temprano — todo lo que construye una base sólida para la escuela y la vida.",
+
+  "why.point2.title": "Grupos pequeños y atención personal",
+  "why.point2.text": "Mantenemos los grupos pequeños para que cada niño reciba el tiempo, la guía y el apoyo que realmente necesita.",
+
+  "why.point3.title": "Atmósfera cálida y premium",
+  "why.point3.text": "Colores pastel, luz suave, materiales organizados y rutinas claras ayudan a los niños a sentirse seguros y motivados.",
+
+  "why.point4.title": "Alianza con los padres",
+  "why.point4.text": "Compartimos el progreso, damos ideas simples para casa y mantenemos comunicación constante para que siempre sepas cómo crece tu hijo.",
+
+  "classesPreview.title": "Programas principales en Majestic Dream Cary",
+  "classesPreview.subtitle": "Elige un enfoque o combina varios programas según las necesidades e intereses de tu hijo.",
+  "classesPreview.cta": "Ver todas las descripciones de clases",
+
+  "classes.handwriting.title": "Caligrafía y motricidad fina",
+  "classes.handwriting.text": "Líneas, curvas, formas, letras y números con repetición lúdica y guía suave.",
+
+  "classes.schoolReadiness.title": "Preparación escolar",
+  "classes.schoolReadiness.text": "Atención, memoria, instrucciones, matemáticas tempranas y alfabetización para que el kindergarten se sienta familiar.",
+
+  "classes.creativeArt.title": "Arte creativo y dibujo",
+  "classes.creativeArt.text": "Dibujo, coloreado, composición simple y narración a través de imágenes para liberar la imaginación.",
+
+  "classes.logicStem.title": "Lógica y STEM para mentes pequeñas",
+  "classes.logicStem.text": "Patrones, rompecabezas, experimentos simples y lógica temprana para desarrollar curiosidad y pensamiento crítico.",
+
+  "classes.tagAges": "Edades 3–7",
+  "classes.tagGroups": "Grupos pequeños",
+  "classes.tagMaterials": "Materiales incluidos",
+  "classes.tagFun": "Aprendizaje basado en el juego",
+
+  "reviewsPreview.title": "Lo que dicen los padres",
+  "reviewsPreview.subtitle": "Experiencias reales de familias que ven a sus hijos crecer más seguros, enfocados y felices.",
+  "reviewsPreview.cta": "Leer más reseñas",
+
+  "reviews.showTranslation": "Mostrar traducción",
+  "reviews.hideTranslation": "Ocultar traducción",
+
+  "reviews.r1.es": "A mi hija le encanta Majestic Dream Cary. ¡Su letra y confianza han mejorado muchísimo!",
+  "reviews.r2.es": "Los grupos pequeños y el ambiente tranquilo son exactamente lo que nuestro hijo necesitaba para concentrarse y disfrutar aprendiendo.",
+  "reviews.r3.es": "Vemos progreso cada semana — en motricidad fina, atención e incluso en cómo habla nuestro hijo sobre la escuela.",
+
+  "finalCta.title": "¿Listo para ver cómo puede crecer tu hijo en Majestic Dream Cary?",
+  "finalCta.text": "Reserva una clase de prueba gratuita y siente la diferencia de un estudio de aprendizaje temprano tranquilo, estructurado e inspirador.",
+  "finalCta.cta": "Reservar clase de prueba",
+
+  "footer.tagline": "Estudio de aprendizaje temprano: caligrafía, creatividad, preparación escolar y STEM en Cary, NC.",
+  "footer.links.title": "Enlaces rápidos",
+  "footer.schedule": "Horario",
+  "footer.contact.title": "Contacto",
+  "footer.contact.text": "Cary, Carolina del Norte, EE.UU.\nEmail: info@majesticdreamcary.com"
+}

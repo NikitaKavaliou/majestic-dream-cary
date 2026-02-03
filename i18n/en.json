@@ -1,0 +1,80 @@
+{
+  "nav.classes": "Classes",
+  "nav.pricing": "Pricing",
+  "nav.reviews": "Reviews",
+  "nav.contact": "Contact",
+
+  "hero.title": "Early Learning Studio in Cary for kids 3–7",
+  "hero.subtitle": "Handwriting, creativity, school readiness, STEM, and more in a warm, premium space where children feel confident and inspired.",
+  "hero.cta": "Book a free trial class",
+  "hero.secondaryCta": "Explore all classes",
+  "hero.badgeSmallGroups": "Small groups 4–6 kids",
+  "hero.badgeAges": "Ages 3–7",
+  "hero.badgeLocation": "Located in Cary, NC",
+
+  "hero.card1.title": "Handwriting & Fine Motor",
+  "hero.card1.text": "Gentle practice with fun worksheets, lines, shapes, and letters to prepare little hands for confident writing.",
+
+  "hero.card2.title": "Creative Art & Drawing",
+  "hero.card2.text": "Colors, forms, imagination and storytelling through art – no pressure, only joy and creativity.",
+
+  "hero.card3.title": "School Readiness & STEM",
+  "hero.card3.text": "Logic, numbers, patterns, early science and problem‑solving to make the first school years easier and happier.",
+
+  "why.title": "Why parents choose Majestic Dream Cary",
+  "why.subtitle": "A calm, structured and inspiring environment where every child is seen, heard and supported.",
+
+  "why.point1.title": "Focused on real skills",
+  "why.point1.text": "Handwriting, reading, logic, creativity, early STEM – everything that builds a strong foundation for school and life.",
+
+  "why.point2.title": "Small groups & personal attention",
+  "why.point2.text": "We keep groups intentionally small so your child gets the time, guidance and encouragement they truly need.",
+
+  "why.point3.title": "Warm, premium atmosphere",
+  "why.point3.text": "Pastel colors, soft light, organized materials and clear routines help children feel safe and motivated.",
+
+  "why.point4.title": "Partnership with parents",
+  "why.point4.text": "We share progress, give simple home ideas and stay in touch so you always know how your child is growing.",
+
+  "classesPreview.title": "Core programs at Majestic Dream Cary",
+  "classesPreview.subtitle": "Choose one focus or combine several programs to match your child’s unique needs and interests.",
+  "classesPreview.cta": "View full class descriptions",
+
+  "classes.handwriting.title": "Handwriting & Fine Motor Skills",
+  "classes.handwriting.text": "Lines, curves, shapes, letters and numbers with playful repetition and gentle guidance.",
+
+  "classes.schoolReadiness.title": "School Readiness",
+  "classes.schoolReadiness.text": "Attention, memory, following instructions, early math and literacy to make kindergarten feel familiar.",
+
+  "classes.creativeArt.title": "Creative Art & Drawing",
+  "classes.creativeArt.text": "Drawing, coloring, simple composition and storytelling through pictures to unlock imagination.",
+
+  "classes.logicStem.title": "Logic & STEM for Little Minds",
+  "classes.logicStem.text": "Patterns, puzzles, simple experiments and early coding logic to build curiosity and problem‑solving.",
+
+  "classes.tagAges": "Ages 3–7",
+  "classes.tagGroups": "Small groups",
+  "classes.tagMaterials": "All materials included",
+  "classes.tagFun": "Play‑based learning",
+
+  "reviewsPreview.title": "What parents say",
+  "reviewsPreview.subtitle": "Real experiences from families who see their children grow more confident, focused and joyful.",
+  "reviewsPreview.cta": "Read more parent reviews",
+
+  "reviews.showTranslation": "Show translation",
+  "reviews.hideTranslation": "Hide translation",
+
+  "reviews.r1.en": "My daughter absolutely loves Majestic Dream Cary. Her handwriting and confidence improved so much!",
+  "reviews.r2.en": "The small groups and calm atmosphere are exactly what our son needed to focus and enjoy learning.",
+  "reviews.r3.en": "We see progress every week – in fine motor skills, attention and even how our child talks about school.",
+
+  "finalCta.title": "Ready to see how your child can grow at Majestic Dream Cary?",
+  "finalCta.text": "Schedule a free trial class and feel the difference of a calm, structured and inspiring early learning studio.",
+  "finalCta.cta": "Schedule a free trial",
+
+  "footer.tagline": "Early learning studio for handwriting, creativity, school readiness and STEM in Cary, NC.",
+  "footer.links.title": "Quick links",
+  "footer.schedule": "Schedule",
+  "footer.contact.title": "Contact",
+  "footer.contact.text": "Cary, North Carolina, USA\nEmail: info@majesticdreamcary.com"
+}

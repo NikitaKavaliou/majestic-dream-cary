@@ -10,7 +10,7 @@ const I18N = (function () {
   // Load JSON file for selected language
   async function loadLanguage(lang) {
     try {
-      const response = await fetch(`/i18n/${lang}.json`);
+      const response = await fetch(`i18n/${lang}.json`);
       const data = await response.json();
       translations[lang] = data;
       applyTranslations(lang);

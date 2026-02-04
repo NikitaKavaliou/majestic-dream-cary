@@ -1,17 +1,14 @@
-/* i18n.js — auto-detect correct path for JSON files */
+/* i18n.js — GitHub Pages compatible */
 
 const I18N = (function () {
   let currentLang = "en";
   let translations = {};
 
-  function getBasePath() {
-    return window.location.pathname.includes("/pages/") ? ".." : ".";
-  }
+  const REPO = "/majestic-dream-cary";
 
   async function loadLanguage(lang) {
     try {
-      const base = getBasePath();
-      const response = await fetch(`${base}/i18n/${lang}.json`);
+      const response = await fetch(`${REPO}/i18n/${lang}.json`);
       const data = await response.json();
       translations[lang] = data;
       applyTranslations(lang);

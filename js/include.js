@@ -19,3 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   includeComponent("header", "components/header.html");
   includeComponent("footer", "components/footer.html");
 });
+
+
+

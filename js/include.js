@@ -1,16 +1,13 @@
-/* include.js — auto-detect correct path */
+/* include.js — GitHub Pages compatible */
 
-function getBasePath() {
-  return window.location.pathname.includes("/pages/") ? ".." : "";
-}
+const REPO = "/majestic-dream-cary";
 
 async function includeComponent(selector, file) {
   try {
     const container = document.querySelector(selector);
     if (!container) return;
 
-    const base = getBasePath();
-    const response = await fetch(`${base}/${file}`);
+    const response = await fetch(`${REPO}/${file}`);
     const html = await response.text();
     container.innerHTML = html;
   } catch (err) {

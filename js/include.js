@@ -1,21 +1,9 @@
-/* ============================================================
-   include.js — injects header and footer from /components
-============================================================ */
-
-async function includeComponent(selector, file) {
-  try {
-    const container = document.querySelector(selector);
-    if (!container) return;
-
-    const response = await fetch(file);
-    const html = await response.text();
-    container.innerHTML = html;
-  } catch (err) {
-    console.error("Component load error:", file, err);
-  }
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-  includeComponent("header", "/components/header.html");
-  includeComponent("footer", "/components/footer.html");
+  fetch("components/header.html")
+    .then(res => res.text())
+    .then(data => document.querySelector("header").innerHTML = data);
+
+  fetch("components/footer.html")
+    .then(res => res.text())
+    .then(data => document.querySelector("footer").innerHTML = data);
 });

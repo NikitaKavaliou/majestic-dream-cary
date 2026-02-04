@@ -1,7 +1,7 @@
 /* include.js — auto-detect correct path */
 
 function getBasePath() {
-  return window.location.pathname.includes("/pages/") ? ".." : ".";
+  return window.location.pathname.includes("/pages/") ? ".." : "";
 }
 
 async function includeComponent(selector, file) {

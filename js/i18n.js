@@ -1,16 +1,17 @@
-/* ============================================================
-   i18n.js — Language switching system for Majestic Dream Cary
-   Loads JSON files and replaces all [data-i18n] elements
-============================================================ */
+/* i18n.js — auto-detect correct path for JSON files */
 
 const I18N = (function () {
   let currentLang = "en";
   let translations = {};
 
-  // Load JSON file for selected language
+  function getBasePath() {
+    return window.location.pathname.includes("/pages/") ? ".." : ".";
+  }
+
   async function loadLanguage(lang) {
     try {
-      const response = await fetch(`i18n/${lang}.json`);
+      const base = getBasePath();
+      const response = await fetch(`${base}/i18n/${lang}.json`);
       const data = await response.json();
       translations[lang] = data;
       applyTranslations(lang);
@@ -19,7 +20,6 @@ const I18N = (function () {
     }
   }
 
-  // Apply translations to all elements with data-i18n
   function applyTranslations(lang) {
     currentLang = lang;
     document.documentElement.lang = lang;
@@ -36,14 +36,12 @@ const I18N = (function () {
     updateActiveButton(lang);
   }
 
-  // Highlight active language button
   function updateActiveButton(lang) {
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
     });
   }
 
-  // Initialize language switcher
   function init() {
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -56,14 +54,12 @@ const I18N = (function () {
       });
     });
 
-    // Load default language
     loadLanguage("en");
   }
 
   return { init };
 })();
 
-// Initialize after DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
   I18N.init();
 });

@@ -78,5 +78,24 @@
   "footer.contact.title": "Контакты",
   "footer.contact.text": "Cary, North Carolina, USA\nEmail: info@majesticdreamcary.com"
 
+"pricing.title": "Цены",
+"pricing.subtitle": "Простая и прозрачная система — выберите расписание, подходящее вашей семье.",
+
+"pricing.plan1.title": "1 занятие в неделю",
+"pricing.plan1.price": "$160 / месяц",
+"pricing.plan1.point1": "Любая программа включена",
+"pricing.plan1.point2": "Мини‑группы 4–6 детей",
+"pricing.plan1.point3": "Все материалы включены",
+
+"pricing.plan2.title": "2 занятия в неделю",
+"pricing.plan2.price": "$280 / месяц",
+"pricing.plan2.point1": "Можно комбинировать программы",
+"pricing.plan2.point2": "Мини‑группы 4–6 детей",
+"pricing.plan2.point3": "Все материалы включены",
+
+"pricing.plan3.title": "Разовое занятие",
+"pricing.plan3.price": "$45 / занятие",
+"pricing.plan3.point1": "Идеально, чтобы попробовать",
+"pricing.plan3.point2": "Доступна любая программа"
 
 }

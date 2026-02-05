@@ -78,5 +78,24 @@
   "footer.contact.title": "Contacto",
   "footer.contact.text": "Cary, Carolina del Norte, EE.UU.\nEmail: info@majesticdreamcary.com"
 
+"pricing.title": "Precios",
+"pricing.subtitle": "Precios simples y transparentes — elige el horario que mejor se adapte a tu familia.",
+
+"pricing.plan1.title": "1 clase por semana",
+"pricing.plan1.price": "$160 / mes",
+"pricing.plan1.point1": "Incluye cualquier programa",
+"pricing.plan1.point2": "Grupos pequeños de 4–6 niños",
+"pricing.plan1.point3": "Todos los materiales incluidos",
+
+"pricing.plan2.title": "2 clases por semana",
+"pricing.plan2.price": "$280 / mes",
+"pricing.plan2.point1": "Combina los programas como quieras",
+"pricing.plan2.point2": "Grupos pequeños de 4–6 niños",
+"pricing.plan2.point3": "Todos los materiales incluidos",
+
+"pricing.plan3.title": "Clase suelta",
+"pricing.plan3.price": "$45 / clase",
+"pricing.plan3.point1": "Perfecto para probar una clase",
+"pricing.plan3.point2": "Cualquier programa disponible"
 
 }

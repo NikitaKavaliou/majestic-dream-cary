@@ -78,6 +78,7 @@ function init() {
       }
     });
   });
+  document.body.classList.add("i18n-ready");
 }
 
 

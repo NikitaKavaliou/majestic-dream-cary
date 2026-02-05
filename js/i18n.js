@@ -28,6 +28,8 @@ const I18N = (function () {
       const data = await response.json();
       translations[lang] = data;
 
+      localStorage.setItem("lang", lang);
+
       fadeOutIn(() => applyTranslations(lang));
     } catch (err) {
       console.error(`Error loading language file: ${lang}`, err);
@@ -59,21 +61,25 @@ const I18N = (function () {
   }
 
   // Initialize
-  function init() {
-    document.querySelectorAll(".lang-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const lang = btn.getAttribute("data-lang");
+function init() {
+  // 1. Берём язык из localStorage или ставим EN по умолчанию
+  const savedLang = localStorage.getItem("lang") || "en";
+  loadLanguage(savedLang);
 
-        if (!translations[lang]) {
-          loadLanguage(lang);
-        } else {
-          fadeOutIn(() => applyTranslations(lang));
-        }
-      });
+  // 2. Навешиваем обработчики на кнопки
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const lang = btn.getAttribute("data-lang");
+
+      if (!translations[lang]) {
+        loadLanguage(lang);
+      } else {
+        fadeOutIn(() => applyTranslations(lang));
+      }
     });
+  });
+}
 
-    loadLanguage("en");
-  }
 
   return { init };
 })();

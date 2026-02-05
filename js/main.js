@@ -67,3 +67,12 @@ function setupReviewTranslationButtons() {
   });
 }
 
+document.querySelector(".contact-form form")?.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const success = document.querySelector(".form-success");
+  success.hidden = false;
+
+  // Optional: clear fields
+  e.target.reset();
+});
+

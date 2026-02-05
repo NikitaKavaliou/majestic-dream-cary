@@ -649,3 +649,298 @@ button:hover {
   opacity: 0.7;
 }
 
+/* ================================
+   CONTACT PAGE — PREMIUM STYLE
+================================ */
+
+/* Grid layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cards */
+.contact-info,
+.contact-form {
+  background: #faf7f2;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.contact-info h2,
+.contact-form h2 {
+  margin-bottom: 15px;
+  color: #3a3a3a;
+}
+
+.contact-info p,
+.contact-form label {
+  color: #5a5a5a;
+  font-size: 16px;
+}
+
+/* Icons */
+.contact-icon {
+  margin-right: 8px;
+  color: #d49f6a;
+  font-size: 20px;
+}
+
+/* Map */
+.contact-map {
+  margin-top: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+}
+
+/* Form layout */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Floating labels */
+.floating {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.floating input,
+.floating textarea {
+  width: 100%;
+  padding: 14px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating input:focus,
+.floating textarea:focus {
+  border-color: #d49f6a;
+  box-shadow: 0 0 0 3px rgba(212,159,106,0.25);
+  outline: none;
+}
+
+.floating label {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  color: #888;
+  pointer-events: none;
+  transition: 0.2s ease;
+  background: transparent;
+}
+
+.floating input:focus + label,
+.floating textarea:focus + label,
+.floating input:not(:placeholder-shown) + label,
+.floating textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  background: #faf7f2;
+  padding: 0 6px;
+  font-size: 13px;
+  color: #d49f6a;
+}
+
+/* Button */
+.btn.primary {
+  background: #d49f6a;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn.primary:hover {
+  background: #c48d58;
+  transform: translateY(-2px);
+}
+
+/* Success message */
+.form-success {
+  margin-top: 15px;
+  padding: 14px 18px;
+  background: #e8f7e8;
+  border: 1px solid #b6e3b6;
+  color: #3a6b3a;
+  border-radius: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   PRICING — PREMIUM PARIS STYLE
+================================ */
+
+/* Grid */
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Card base */
+.class-card {
+  position: relative;
+  background: #faf7f2;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+.class-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+/* Floating gradient accent */
+.class-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(135deg, #f7d9b5, #f3c7a1, #f7d9b5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.class-card:hover::before {
+  opacity: 1;
+}
+
+/* Recommended plan (middle card) */
+.class-card.recommended {
+  border: 2px solid #d49f6a;
+  box-shadow: 0 8px 24px rgba(212,159,106,0.25);
+}
+
+.class-card.recommended::before {
+  opacity: 1;
+}
+
+/* Discount badge */
+.discount-badge {
+  display: inline-block;
+  background: #ffe8d2;
+  color: #c47d3c;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  animation: pulseBadge 1.6s infinite ease-in-out;
+}
+
+/* Pulse animation */
+@keyframes pulseBadge {
+  0% { transform: scale(1); box-shadow: 0 0 0 rgba(212,159,106,0.0); }
+  50% { transform: scale(1.06); box-shadow: 0 0 12px rgba(212,159,106,0.35); }
+  100% { transform: scale(1); box-shadow: 0 0 0 rgba(212,159,106,0.0); }
+}
+
+/* Old price */
+.old-price {
+  font-size: 18px;
+  color: #999;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* New price */
+.price-amount {
+  font-size: 26px;
+  font-weight: 600;
+  color: #d49f6a;
+  margin-bottom: 10px;
+}
+
+/* List with icons */
+.class-details {
+  margin-top: 15px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.class-details li {
+  margin-bottom: 8px;
+  padding-left: 26px;
+  position: relative;
+  color: #5a5a5a;
+}
+
+.class-details li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #d49f6a;
+  font-weight: bold;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
-  body { opacity: 0; transition: opacity 0.2s ease; }
-  body.i18n-ready { opacity: 1; }
+    body { opacity: 0; transition: opacity 0.2s ease; }
+    body.i18n-ready { opacity: 1; }
   </style>
 
   <link rel="stylesheet" href="../css/style.css" />
@@ -19,7 +19,7 @@
   <header></header>
 
   <main>
-    <section class="section">
+    <section class="section fade-in">
       <div class="section-header">
         <h1 data-i18n="pricing.title">Pricing</h1>
         <p data-i18n="pricing.subtitle">
@@ -30,9 +30,13 @@
       <div class="classes-grid">
 
         <!-- PLAN 1 -->
-        <article class="class-card">
+        <article class="class-card fade-in">
+          <span class="discount-badge">Save 15%</span>
+          <span class="old-price">$190 / month</span>
+
           <h2 data-i18n="pricing.plan1.title">1 class per week</h2>
           <p class="price-amount" data-i18n="pricing.plan1.price">$160 / month</p>
+
           <ul class="class-details">
             <li data-i18n="pricing.plan1.point1">Any program included</li>
             <li data-i18n="pricing.plan1.point2">Small groups 4–6 kids</li>
@@ -40,10 +44,14 @@
           </ul>
         </article>
 
-        <!-- PLAN 2 -->
-        <article class="class-card">
+        <!-- PLAN 2 — RECOMMENDED -->
+        <article class="class-card recommended fade-in">
+          <span class="discount-badge">Best value</span>
+          <span class="old-price">$340 / month</span>
+
           <h2 data-i18n="pricing.plan2.title">2 classes per week</h2>
           <p class="price-amount" data-i18n="pricing.plan2.price">$280 / month</p>
+
           <ul class="class-details">
             <li data-i18n="pricing.plan2.point1">Mix & match programs</li>
             <li data-i18n="pricing.plan2.point2">Small groups 4–6 kids</li>
@@ -52,9 +60,13 @@
         </article>
 
         <!-- DROP-IN -->
-        <article class="class-card">
+        <article class="class-card fade-in">
+          <span class="discount-badge">Try & Save</span>
+          <span class="old-price">$60 / class</span>
+
           <h2 data-i18n="pricing.plan3.title">Drop‑in class</h2>
           <p class="price-amount" data-i18n="pricing.plan3.price">$45 / class</p>
+
           <ul class="class-details">
             <li data-i18n="pricing.plan3.point1">Perfect for trying a class</li>
             <li data-i18n="pricing.plan3.point2">Any program available</li>
@@ -65,7 +77,7 @@
     </section>
 
     <!-- FINAL CTA -->
-    <section class="section final-cta">
+    <section class="section final-cta fade-in">
       <div class="final-cta-inner">
         <h2 data-i18n="finalCta.title">
           Ready to see how your child can grow at Majestic Dream Cary?
@@ -84,21 +96,21 @@
   <footer></footer>
 
   <!-- SCRIPTS -->
-<script src="../js/include.js"></script>
+  <script src="../js/include.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const waitForHeader = setInterval(() => {
-      if (document.querySelector(".lang-btn")) {
-        clearInterval(waitForHeader);
-        I18N.init();
-      }
-    }, 50);
-  });
-</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const waitForHeader = setInterval(() => {
+        if (document.querySelector(".lang-btn")) {
+          clearInterval(waitForHeader);
+          I18N.init();
+        }
+      }, 50);
+    });
+  </script>
 
-<script src="../js/i18n.js"></script>
-<script src="../js/main.js"></script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 </html>

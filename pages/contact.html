@@ -5,9 +5,10 @@
   <title>Contact – Majestic Dream Cary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Prevent flash before i18n loads -->
   <style>
-  body { opacity: 0; transition: opacity 0.2s ease; }
-  body.i18n-ready { opacity: 1; }
+    body { opacity: 0; transition: opacity 0.2s ease; }
+    body.i18n-ready { opacity: 1; }
   </style>
 
   <link rel="stylesheet" href="../css/style.css" />
@@ -19,7 +20,7 @@
   <header></header>
 
   <main>
-    <section class="section">
+    <section class="section fade-in">
       <div class="section-header">
         <h1 data-i18n="contact.title">Contact us</h1>
         <p data-i18n="contact.subtitle">
@@ -29,53 +30,83 @@
 
       <div class="contact-grid">
 
-
-
         <!-- CONTACT INFO -->
-        <div class="contact-info">
-	<div class="contact-container">
-          <h2 data-i18n="contact.infoTitle">Our location</h2>
-          <p data-i18n="contact.address">
-            Cary, North Carolina, USA
-          </p>
+        <div class="contact-info fade-in">
+          <div class="contact-container">
 
-          <h2 data-i18n="contact.emailTitle">Email</h2>
-          <p>
-            <a href="mailto:info@majesticdreamcary.com">info@majesticdreamcary.com</a>
-          </p>
+            <h2 data-i18n="contact.infoTitle">Our location</h2>
+            <p>
+              <span class="contact-icon">📍</span>
+              <span data-i18n="contact.address">Cary, North Carolina, USA</span>
+            </p>
 
-          <h2 data-i18n="contact.hoursTitle">Hours</h2>
-          <p data-i18n="contact.hours">
-            Monday – Friday<br />
-            9:00 AM – 6:00 PM
-          </p>
+            <h2 data-i18n="contact.emailTitle">Email</h2>
+            <p>
+              <span class="contact-icon">📧</span>
+              <a href="mailto:info@majesticdreamcary.com">info@majesticdreamcary.com</a>
+            </p>
+
+            <h2 data-i18n="contact.hoursTitle">Hours</h2>
+            <p>
+              <span class="contact-icon">⏰</span>
+              <span data-i18n="contact.hours">
+                Monday – Friday<br>9:00 AM – 6:00 PM
+              </span>
+            </p>
+
+            <!-- MAP -->
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207977.497!2d-78.90!3d35.79"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+          </div>
         </div>
 
         <!-- CONTACT FORM -->
-        <div class="contact-form">
+        <div class="contact-form fade-in">
           <h2 data-i18n="contact.formTitle">Send us a message</h2>
 
           <form>
-            <label data-i18n="contact.form.name">Your name</label>
-            <input type="text" required />
 
-            <label data-i18n="contact.form.email">Your email</label>
-            <input type="email" required />
+            <div class="floating">
+              <input type="text" required placeholder=" " />
+              <label data-i18n="contact.form.name">Your name</label>
+            </div>
 
-            <label data-i18n="contact.form.message">Message</label>
-            <textarea rows="5" required></textarea>
+            <div class="floating">
+              <input type="email" required placeholder=" " />
+              <label data-i18n="contact.form.email">Your email</label>
+            </div>
+
+            <div class="floating">
+              <textarea rows="5" required placeholder=" "></textarea>
+              <label data-i18n="contact.form.message">Message</label>
+            </div>
 
             <button type="submit" class="btn primary" data-i18n="contact.form.send">
               Send message
             </button>
+
+            <!-- SUCCESS MESSAGE -->
+            <p class="form-success" hidden>
+              <span>✨</span>
+              <span data-i18n="contact.form.success">
+                Your message has been sent! We’ll get back to you soon.
+              </span>
+            </p>
+
           </form>
         </div>
-      </div>
+
       </div>
     </section>
 
     <!-- FINAL CTA -->
-    <section class="section final-cta">
+    <section class="section final-cta fade-in">
       <div class="final-cta-inner">
         <h2 data-i18n="finalCta.title">
           Ready to see how your child can grow at Majestic Dream Cary?
@@ -94,22 +125,35 @@
   <footer></footer>
 
   <!-- SCRIPTS -->
-<script src="../js/include.js"></script>
+  <script src="../js/include.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const waitForHeader = setInterval(() => {
-      if (document.querySelector(".lang-btn")) {
-        clearInterval(waitForHeader);
-        I18N.init();
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const waitForHeader = setInterval(() => {
+        if (document.querySelector(".lang-btn")) {
+          clearInterval(waitForHeader);
+          I18N.init();
+        }
+      }, 50);
+    });
+
+    // Success message logic
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.querySelector(".contact-form form");
+      const success = document.querySelector(".form-success");
+
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          success.hidden = false;
+          form.reset();
+        });
       }
-    }, 50);
-  });
-</script>
+    });
+  </script>
 
-<script src="../js/i18n.js"></script>
-<script src="../js/main.js"></script>
-
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 </html>

@@ -72,7 +72,7 @@ const I18N = (function () {
       });
     });
 
-    loadLanguage("ru");
+    loadLanguage("en");
   }
 
   return { init };

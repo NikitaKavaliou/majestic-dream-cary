@@ -574,3 +574,78 @@ button {
 button:hover {
   background: #e8a7b8;
 }
+
+
+.translation-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.translation-wrapper.open {
+  max-height: 200px; /* или auto через JS */
+}
+
+.mdc-footer {
+  background: #faf7f2;
+  padding: 50px 20px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  color: #4a4a4a;
+  font-size: 16px;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mdc-footer h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #3a3a3a;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #5a5a5a;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #d49f6a;
+  transform: translateX(3px);
+}
+
+.footer-icon {
+  margin-right: 8px;
+  color: #d49f6a;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+

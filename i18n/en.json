@@ -65,8 +65,13 @@
   "reviews.hideTranslation": "Hide translation",
 
   "reviews.r1.en": "My daughter absolutely loves Majestic Dream Cary. Her handwriting and confidence improved so much!",
+  "reviews.r1.translation": "",
+
   "reviews.r2.en": "The small groups and calm atmosphere are exactly what our son needed to focus and enjoy learning.",
+  "reviews.r2.translation": "",
+
   "reviews.r3.en": "We see progress every week – in fine motor skills, attention and even how our child talks about school.",
+  "reviews.r3.translation": "",
 
   "finalCta.title": "Ready to see how your child can grow at Majestic Dream Cary?",
   "finalCta.text": "Schedule a free trial class and feel the difference of a calm, structured and inspiring early learning studio.",
@@ -78,25 +83,23 @@
   "footer.contact.title": "Contact",
   "footer.contact.text": "Cary, North Carolina, USA\nEmail: info@majesticdreamcary.com",
 
-"pricing.title": "Pricing",
-"pricing.subtitle": "Simple, transparent pricing — choose the schedule that fits your family.",
+  "pricing.title": "Pricing",
+  "pricing.subtitle": "Simple, transparent pricing — choose the schedule that fits your family.",
 
-"pricing.plan1.title": "1 class per week",
-"pricing.plan1.price": "$160 / month",
-"pricing.plan1.point1": "Any program included",
-"pricing.plan1.point2": "Small groups 4–6 kids",
-"pricing.plan1.point3": "All materials included",
+  "pricing.plan1.title": "1 class per week",
+  "pricing.plan1.price": "$160 / month",
+  "pricing.plan1.point1": "Any program included",
+  "pricing.plan1.point2": "Small groups 4–6 kids",
+  "pricing.plan1.point3": "All materials included",
 
-"pricing.plan2.title": "2 classes per week",
-"pricing.plan2.price": "$280 / month",
-"pricing.plan2.point1": "Mix & match programs",
-"pricing.plan2.point2": "Small groups 4–6 kids",
-"pricing.plan2.point3": "All materials included",
+  "pricing.plan2.title": "2 classes per week",
+  "pricing.plan2.price": "$280 / month",
+  "pricing.plan2.point1": "Mix & match programs",
+  "pricing.plan2.point2": "Small groups 4–6 kids",
+  "pricing.plan2.point3": "All materials included",
 
-"pricing.plan3.title": "Drop‑in class",
-"pricing.plan3.price": "$45 / class",
-"pricing.plan3.point1": "Perfect for trying a class",
-"pricing.plan3.point2": "Any program available"
-
-
+  "pricing.plan3.title": "Drop‑in class",
+  "pricing.plan3.price": "$45 / class",
+  "pricing.plan3.point1": "Perfect for trying a class",
+  "pricing.plan3.point2": "Any program available"
 }

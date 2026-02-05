@@ -15,13 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ------------------------------------------------------------
-// 2. Review translation system
 // ------------------------------------------------------------
-// This object will be filled after i18n loads language files
-// i18n.js stores translations in I18NTranslations (global)
-window.I18NTranslations = window.I18NTranslations || {};
+// 2. Review translation system (EN / RU / ES)
+// ------------------------------------------------------------
 
-// Wait until translations are loaded
 document.addEventListener("DOMContentLoaded", () => {
   setupReviewTranslationButtons();
 });
@@ -30,14 +27,16 @@ function setupReviewTranslationButtons() {
   document.querySelectorAll(".show-translation-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const card = btn.closest(".review-card");
-      const reviewId = card.getAttribute("data-review-id");
+      const wrapper = card.querySelector(".translation-wrapper");
+      const translationEl = card.querySelector(".review-text-translation");
       const lang = document.documentElement.lang;
 
-      // English = no translation needed
+      // English = no translation available
       if (lang === "en") return;
 
-      const translationEl = card.querySelector(".review-text-translation");
-      const key = `reviews.${reviewId}.${lang}`;
+      // Key for translation (universal for RU/ES)
+      const reviewId = card.getAttribute("data-review-id");
+      const key = `reviews.${reviewId}.translation`;
 
       const translatedText =
         window.I18NTranslations[lang] &&
@@ -48,15 +47,18 @@ function setupReviewTranslationButtons() {
         return;
       }
 
-      // Toggle visibility
-      if (translationEl.hidden) {
-        translationEl.textContent = translatedText;
-        translationEl.hidden = false;
+      // Insert translated text
+      translationEl.textContent = translatedText;
+
+      // Toggle open/close
+      wrapper.hidden = false;
+      wrapper.classList.toggle("open");
+
+      if (wrapper.classList.contains("open")) {
         btn.textContent =
           window.I18NTranslations[lang]["reviews.hideTranslation"] ||
           "Hide translation";
       } else {
-        translationEl.hidden = true;
         btn.textContent =
           window.I18NTranslations[lang]["reviews.showTranslation"] ||
           "Show translation";
@@ -64,3 +66,4 @@ function setupReviewTranslationButtons() {
     });
   });
 }
+

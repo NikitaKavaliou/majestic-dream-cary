@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <title>Reviews – Majestic Dream Cary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+  body { opacity: 0; transition: opacity 0.2s ease; }
+  body.i18n-ready { opacity: 1; }
+  </style>
+
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -23,41 +29,35 @@
 
       <div class="reviews-grid">
 
-        <!-- REVIEW 1 -->
-        <article class="review-card" data-review-id="r1">
-          <p class="review-text-original">
-            My daughter absolutely loves Majestic Dream Cary. Her handwriting and confidence improved so much!
-          </p>
-          <p class="review-author">— Emily, mom of a 5‑year‑old</p>
-          <button type="button" class="show-translation-btn" data-i18n="reviews.showTranslation">
-            Show translation
-          </button>
-          <p class="review-text-translation" hidden></p>
-        </article>
+<!-- REVIEW 1 -->
+<article class="review-card" data-review-id="r1">
+  <p class="review-text-original" data-i18n="reviews.r1.en"></p>
+  <p class="review-author">— Emily, mom of a 5‑year‑old</p>
+  <button type="button" class="show-translation-btn" data-i18n="reviews.showTranslation">
+    Show translation
+  </button>
+  <p class="review-text-translation" data-i18n="reviews.r1.es" hidden></p>
+</article>
 
-        <!-- REVIEW 2 -->
-        <article class="review-card" data-review-id="r2">
-          <p class="review-text-original">
-            The small groups and calm atmosphere are exactly what our son needed to focus and enjoy learning.
-          </p>
-          <p class="review-author">— Daniel, dad of a 6‑year‑old</p>
-          <button type="button" class="show-translation-btn" data-i18n="reviews.showTranslation">
-            Show translation
-          </button>
-          <p class="review-text-translation" hidden></p>
-        </article>
+<!-- REVIEW 2 -->
+<article class="review-card" data-review-id="r2">
+  <p class="review-text-original" data-i18n="reviews.r2.en"></p>
+  <p class="review-author">— Daniel, dad of a 6‑year‑old</p>
+  <button type="button" class="show-translation-btn" data-i18n="reviews.showTranslation">
+    Show translation
+  </button>
+  <p class="review-text-translation" data-i18n="reviews.r2.es" hidden></p>
+</article>
 
-        <!-- REVIEW 3 -->
-        <article class="review-card" data-review-id="r3">
-          <p class="review-text-original">
-            We see progress every week – in fine motor skills, attention and even how our child talks about school.
-          </p>
-          <p class="review-author">— Sarah, mom of a 4‑year‑old</p>
-          <button type="button" class="show-translation-btn" data-i18n="reviews.showTranslation">
-            Show translation
-          </button>
-          <p class="review-text-translation" hidden></p>
-        </article>
+<!-- REVIEW 3 -->
+<article class="review-card" data-review-id="r3">
+  <p class="review-text-original" data-i18n="reviews.r3.en"></p>
+  <p class="review-author">— Sarah, mom of a 4‑year‑old</p>
+  <button type="button" class="show-translation-btn" data-i18n="reviews.showTranslation">
+    Show translation
+  </button>
+  <p class="review-text-translation" data-i18n="reviews.r3.es" hidden></p>
+</article>
 
       </div>
     </section>

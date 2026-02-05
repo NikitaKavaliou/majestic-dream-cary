@@ -48,6 +48,7 @@ const I18N = (function () {
       if (translated) {
         el.textContent = translated;
       }
+document.body.classList.add("i18n-ready");
     });
 
     updateActiveButton(lang);
@@ -78,7 +79,6 @@ function init() {
       }
     });
   });
-  document.body.classList.add("i18n-ready");
 }
 
 

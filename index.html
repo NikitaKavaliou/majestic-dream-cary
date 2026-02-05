@@ -133,18 +133,19 @@
 <script src="/majestic-dream-cary/js/include.js"></script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const waitForHeader = setInterval(() => {
-      if (document.querySelector(".lang-btn")) {
-        clearInterval(waitForHeader);
-        i18n.init();
-      }
-    }, 50);
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  const wait = setInterval(() => {
+    if (document.querySelector(".lang-btn")) {
+      clearInterval(wait);
+      I18N.init();
+    }
+  }, 50);
+});
 </script>
 
 <script src="/majestic-dream-cary/js/i18n.js"></script>
 <script src="/majestic-dream-cary/js/main.js"></script>
+
 
 
 

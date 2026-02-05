@@ -78,6 +78,4 @@ const I18N = (function () {
   return { init };
 })();
 
-document.addEventListener("DOMContentLoaded", () => {
-  I18N.init();
-});
+

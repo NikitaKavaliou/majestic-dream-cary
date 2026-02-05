@@ -131,8 +131,16 @@
 
   <!-- SCRIPTS -->
 <script src="/majestic-dream-cary/js/include.js"></script>
-<script src="/majestic-dream-cary/js/i18n.js"></script>
+<script>
+  // ждём, пока header вставится
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      I18N.init();
+    }, 50);
+  });
+</script>
 <script src="/majestic-dream-cary/js/main.js"></script>
+
 
 
 </body>

@@ -77,4 +77,41 @@
   "footer.schedule": "Schedule",
   "footer.contact.title": "Contact",
   "footer.contact.text": "Cary, North Carolina, USA\nEmail: info@majesticdreamcary.com"
+
+{
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Simple, transparent pricing — choose the schedule that fits your family.",
+
+    "plan1": {
+      "title": "1 class per week",
+      "price": "$160 / month",
+      "point1": "Any program included",
+      "point2": "Small groups 4–6 kids",
+      "point3": "All materials included"
+    },
+
+    "plan2": {
+      "title": "2 classes per week",
+      "price": "$280 / month",
+      "point1": "Mix & match programs",
+      "point2": "Small groups 4–6 kids",
+      "point3": "All materials included"
+    },
+
+    "plan3": {
+      "title": "Drop‑in class",
+      "price": "$45 / class",
+      "point1": "Perfect for trying a class",
+      "point2": "Any program available"
+    }
+  },
+
+  "finalCta": {
+    "title": "Ready to see how your child can grow at Majestic Dream Cary?",
+    "text": "Schedule a free trial class and feel the difference of a calm, structured and inspiring early learning studio.",
+    "cta": "Schedule a free trial"
+  }
+}
+
 }

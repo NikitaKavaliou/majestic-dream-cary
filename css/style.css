@@ -100,10 +100,15 @@ body {
   color: #fff;
 }
 
+
 .lang-btn.active {
-  background: var(--accent-dark);
-  color: #fff;
+  background: #f4b8c8;
+  color: white;
+  border-radius: 6px;
+  padding: 4px 10px;
+  transition: 0.2s;
 }
+
 
 /* ===========================
    HERO SECTION

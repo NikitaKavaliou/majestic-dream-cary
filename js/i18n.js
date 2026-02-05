@@ -1,22 +1,40 @@
-/* i18n.js — GitHub Pages compatible */
+/* ============================================================
+   i18n.js — Premium Language Switcher for Majestic Dream Cary
+   - Loads JSON files
+   - Smooth fade animation
+   - Works on all pages
+============================================================ */
 
 const I18N = (function () {
   let currentLang = "en";
   let translations = {};
 
-  const REPO = "/majestic-dream-cary";
+  // Fade animation
+  function fadeOutIn(callback) {
+    const body = document.body;
+    body.style.transition = "opacity 0.25s ease";
+    body.style.opacity = "0";
 
+    setTimeout(() => {
+      callback();
+      body.style.opacity = "1";
+    }, 250);
+  }
+
+  // Load JSON file
   async function loadLanguage(lang) {
     try {
-      const response = await fetch(`${REPO}/i18n/${lang}.json`);
+      const response = await fetch(`/majestic-dream-cary/i18n/${lang}.json`);
       const data = await response.json();
       translations[lang] = data;
-      applyTranslations(lang);
+
+      fadeOutIn(() => applyTranslations(lang));
     } catch (err) {
       console.error(`Error loading language file: ${lang}`, err);
     }
   }
 
+  // Apply translations
   function applyTranslations(lang) {
     currentLang = lang;
     document.documentElement.lang = lang;
@@ -33,20 +51,23 @@ const I18N = (function () {
     updateActiveButton(lang);
   }
 
+  // Highlight active language button
   function updateActiveButton(lang) {
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
     });
   }
 
+  // Initialize
   function init() {
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
         const lang = btn.getAttribute("data-lang");
+
         if (!translations[lang]) {
           loadLanguage(lang);
         } else {
-          applyTranslations(lang);
+          fadeOutIn(() => applyTranslations(lang));
         }
       });
     });

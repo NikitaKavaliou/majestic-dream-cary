@@ -633,13 +633,13 @@ button:hover {
 }
 
 .footer-links a:hover {
-  color: #d49f6a;
+  color: #faf7f2;
   transform: translateX(3px);
 }
 
 .footer-icon {
   margin-right: 8px;
-  color: #d49f6a;
+  color: #faf7f2;
 }
 
 .footer-bottom {
@@ -694,7 +694,7 @@ button:hover {
 /* Icons */
 .contact-icon {
   margin-right: 8px;
-  color: #d49f6a;
+  color: #faf7f2;
   font-size: 20px;
 }
 
@@ -739,7 +739,7 @@ button:hover {
 
 .floating input:focus,
 .floating textarea:focus {
-  border-color: #d49f6a;
+  border-color: #faf7f2;
   box-shadow: 0 0 0 3px rgba(212,159,106,0.25);
   outline: none;
 }
@@ -763,12 +763,12 @@ button:hover {
   background: #faf7f2;
   padding: 0 6px;
   font-size: 13px;
-  color: #d49f6a;
+  color: #FF8FB0;
 }
 
 /* Button */
 .btn.primary {
-  background: #d49f6a;
+  background: #FF8FB0;
   color: white;
   padding: 14px 20px;
   border-radius: 10px;

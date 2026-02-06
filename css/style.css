@@ -813,7 +813,7 @@ button:hover {
 }
 
 /* ================================
-   PRICING — PREMIUM PARIS STYLE
+   PRICING — MONTESSORI PASTEL STYLE
 ================================ */
 
 /* Grid */
@@ -828,7 +828,7 @@ button:hover {
 /* Card base */
 .class-card {
   position: relative;
-  background: #faf7f2;
+  background: var(--card-bg);
   padding: 30px;
   border-radius: 18px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
@@ -842,14 +842,14 @@ button:hover {
   box-shadow: 0 10px 22px rgba(0,0,0,0.08);
 }
 
-/* Floating gradient accent */
+/* Floating gradient accent — soft pink */
 .class-card::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 18px;
   padding: 2px;
-  background: linear-gradient(135deg, #f7d9b5, #f3c7a1, #f7d9b5);
+  background: linear-gradient(135deg, #ffe3ec, #ffb7cc, #ffe3ec);
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: -1;
@@ -859,10 +859,10 @@ button:hover {
   opacity: 1;
 }
 
-/* Recommended plan (middle card) */
+/* Recommended plan */
 .class-card.recommended {
-  border: 2px solid #d49f6a;
-  box-shadow: 0 8px 24px rgba(212,159,106,0.25);
+  border: 2px solid var(--accent);
+  box-shadow: 0 8px 24px rgba(255, 143, 176, 0.25);
 }
 
 .class-card.recommended::before {
@@ -872,8 +872,8 @@ button:hover {
 /* Discount badge */
 .discount-badge {
   display: inline-block;
-  background: #ffe8d2;
-  color: #c47d3c;
+  background: var(--pastel-1);
+  color: var(--accent-dark);
   padding: 4px 10px;
   border-radius: 8px;
   font-size: 14px;
@@ -884,9 +884,9 @@ button:hover {
 
 /* Pulse animation */
 @keyframes pulseBadge {
-  0% { transform: scale(1); box-shadow: 0 0 0 rgba(212,159,106,0.0); }
-  50% { transform: scale(1.06); box-shadow: 0 0 12px rgba(212,159,106,0.35); }
-  100% { transform: scale(1); box-shadow: 0 0 0 rgba(212,159,106,0.0); }
+  0% { transform: scale(1); box-shadow: 0 0 0 rgba(255, 143, 176, 0.0); }
+  50% { transform: scale(1.06); box-shadow: 0 0 12px rgba(255, 143, 176, 0.35); }
+  100% { transform: scale(1); box-shadow: 0 0 0 rgba(255, 143, 176, 0.0); }
 }
 
 /* Old price */
@@ -902,7 +902,7 @@ button:hover {
 .price-amount {
   font-size: 26px;
   font-weight: 600;
-  color: #d49f6a;
+  color: var(--accent-dark);
   margin-bottom: 10px;
 }
 
@@ -925,7 +925,7 @@ button:hover {
   position: absolute;
   left: 0;
   top: 0;
-  color: #d49f6a;
+  color: var(--accent-dark);
   font-weight: bold;
 }
 
@@ -942,5 +942,4 @@ button:hover {
     transform: translateY(0);
   }
 }
-
 

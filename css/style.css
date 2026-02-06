@@ -943,3 +943,12 @@ button:hover {
   }
 }
 
+/* Показываем оригинал только для английского */
+html[lang="en"] .review-text-translation {
+  display: none;
+}
+
+/* Показываем перевод для RU/ES */
+html:not([lang="en"]) .review-text-original {
+  display: none;
+}
